@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('mysite/', views.index),
     path('mysite/', include('mysite.urls')),
-#   url 매핑하기
-    path('', include('pages.urls')),
+    # url 매핑하기
+    path('accounts/', include('accounts.urls')),
 ]
